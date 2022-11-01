@@ -1,3 +1,56 @@
-/* 
-    General Styles
-*/
+.sw-image {
+    height: 90px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.characters {
+    color: rgb(217, 232, 20);
+}
+
+.planets {
+    color:rgb(217, 232, 20);
+}
+
+.info {
+    color: rgb(217, 232, 20);
+}
+
+.main {
+    width: 18rem;
+    margin-left: 5px;
+    background-color: black;
+    color: yellow;
+}
+
+.desc {
+    color: yellow;
+}
+
+h1 {
+    color: yellow;
+}
+
+hr {
+    color: yellow;
+}
+
+.trash {
+    background-color: white;
+    color: red;
+    border: none;
+    margin-left: 10px;
+    justify-content: end;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+
+
+
