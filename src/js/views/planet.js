@@ -14,7 +14,7 @@ export const Planet = props => {
 	
 		<div className="row bg-dark p-5 rounded-lg d-flex">
 				<div className="col d-flex justify-content-center mb-3">
-					<img src="https://via.placeholder.com/400x400" />
+				<img src={`https://starwars-visualguide.com/assets/img/planets/${store.planetList[params.index].uid}.jpg`} />
 				</div>
 				<div className="col d-inline justify-content-center">
 					<h1>{store.planetList[params.index].name}</h1>
@@ -26,21 +26,20 @@ export const Planet = props => {
 				<div className="info mt-4 d-flex justify-content-around">
 					<div>
 						<p>Terrain:</p>
-						<p>{store.planetList[params.index].terrain}</p>
+						<p>{store.planetInfoList[params.index].terrain}</p>
 					</div>
 					<div>
 						<p>Climate:</p>
-						<p>{store.planetList[params.index].climate}</p>
+						<p>{store.planetInfoList[params.index].climate}</p>
 					</div>
 					<div>
 						<p>Population:</p>
-						<p>{store.planetList[params.index].population}</p>
+						<p>{store.planetInfoList[params.index].population}</p>
 					</div>
 					<div>
 						<p>Diameter:</p>
-						<p>{store.planetList[params.index].diameter}</p>
-					</div>
-					
+						<p>{store.planetInfoList[params.index].diameter}</p>
+					</div>				
 					<hr></hr>
 				</div>
 

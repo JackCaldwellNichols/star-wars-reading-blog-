@@ -9,7 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Navbar = () => {
 
+	
 
+	
 	const {store, actions } = useContext(Context);
 	return (
 		<nav className="navbar navbar-light mb-2 me-5 d-flex justify content-between">
@@ -22,7 +24,7 @@ export const Navbar = () => {
 	
 					return (
 						
-						<Dropdown.Item key={item.index} value="empty">{item}<button className="trash" ><FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></button></Dropdown.Item>
+						<Dropdown.Item key={item.index} value="empty">{item}<button className="trash"><FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></button></Dropdown.Item>
 					)
 				})}		
     		</DropdownButton>

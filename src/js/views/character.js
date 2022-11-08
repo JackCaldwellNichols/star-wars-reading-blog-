@@ -4,7 +4,6 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 
-
 export const Character = props => {
 	const {store, actions} = useContext(Context)
 	let params = useParams()
@@ -14,7 +13,7 @@ export const Character = props => {
 	
 		<div className="row bg-dark p-5 rounded-lg d-flex">
 				<div className="col d-flex justify-content-center mb-3">
-					<img src={`https://starwars-visualguide.com/assets/img/characters/1.jpg`} />
+					<img src={`https://starwars-visualguide.com/assets/img/characters/${store.peopleList[params.index].uid}.jpg`} />
 				</div>
 				<div className="col d-inline justify-content-center">
 					<h1>{store.peopleList[params.index].name}</h1>
@@ -23,23 +22,28 @@ export const Character = props => {
 				<div>
 					<hr></hr>
 				</div>
-				<div className="info mt-4 d-flex justify-content-around">
+				<div className="info">
 					<div>
 						<p>Birth year:</p>
-						<p>{store.peopleList[params.index].birth_year}</p>
+						<p>{store.peopleInfoList[params.index].birth_year}</p>
 					</div>
 					<div>
 						<p>Hair Colour:</p>
-						<p>{store.peopleList[params.index].hair_color}</p>
+						<p>{store.peopleInfoList[params.index].hair_color}</p>
 					</div>
 					<div>
 						<p>Height:</p>
-						<p>{store.peopleList[params.index].height}</p>
+						<p>{store.peopleInfoList[params.index].height}</p>
 					</div>
 					<div>
 						<p>Eye Colour:</p>
-						<p>{store.peopleList[params.index].eye_color}</p>
+						<p>{store.peopleInfoList[params.index].eye_color}</p>
 					</div>
+					<div>
+						<p>Gender:</p>
+						<p>{store.peopleInfoList[params.index].gender}</p>
+					</div>
+								
 					<hr></hr>
 				</div>
 

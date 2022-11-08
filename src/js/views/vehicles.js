@@ -14,7 +14,7 @@ export const Vehicle = props => {
 	
 		<div className="row bg-dark p-5 rounded-lg d-flex">
 				<div className="col d-flex justify-content-center mb-3">
-					<img src="https://via.placeholder.com/400x400" />
+				<img src={`https://starwars-visualguide.com/assets/img/vehicles/${store.vehicleList[params.index].uid}.jpg`} />
 				</div>
 				<div className="col d-inline justify-content-center">
 					<h1>{store.vehicleList[params.index].name}</h1>
@@ -26,21 +26,24 @@ export const Vehicle = props => {
 				<div className="info mt-4 d-flex justify-content-around">
 					<div>
 						<p>Crew:</p>
-						<p>{store.vehicleList[params.index].crew}</p>
+						<p>{store.vehicleInfoList[params.index].crew}</p>
 					</div>
 					<div>
 						<p>Passengers:</p>
-						<p>{store.vehicleList[params.index].passengers}</p>
+						<p>{store.vehicleInfoList[params.index].passengers}</p>
 					</div>
 					<div>
 						<p>Length:</p>
-						<p>{store.vehicleList[params.index].length}</p>
+						<p>{store.vehicleInfoList[params.index].length}</p>
 					</div>
 					<div>
 						<p>Model:</p>
-						<p>{store.vehicleList[params.index].model}</p>
+						<p>{store.vehicleInfoList[params.index].model}</p>
 					</div>
-					
+					<div>
+						<p>Cargo Capacity:</p>
+						<p>{store.vehicleInfoList[params.index].cargo_capacity}</p>
+					</div>			
 					<hr></hr>
 				</div>
 
