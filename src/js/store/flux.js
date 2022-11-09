@@ -70,9 +70,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({planetInfoList: json.results})
 			},
 
-				setFavorites: (name) => {
+			setFavorites: (name) => {
 					const store = getStore();
 					setStore({favorites: [...store.favorites, name]})
+			},
+
+			removeItem: (item) => {
+				const store = getStore();
+				setStore({ favorites: store.favorites.filter(fav => fav !== item) });
 			},
 
 			fetchVehicles: async () => {

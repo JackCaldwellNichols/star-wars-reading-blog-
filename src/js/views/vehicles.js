@@ -12,42 +12,42 @@ export const Vehicle = props => {
 	return (
 
 	
-		<div className="row bg-dark p-5 rounded-lg d-flex">
+		<div className="row p-5 rounded-lg d-flex">
 				<div className="col d-flex justify-content-center mb-3">
 				<img src={`https://starwars-visualguide.com/assets/img/vehicles/${store.vehicleList[params.index].uid}.jpg`} />
 				</div>
 				<div className="col d-inline justify-content-center">
 					<h1>{store.vehicleList[params.index].name}</h1>
-					<p className="desc pe-3 me-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p className="desc pe-3 me-3 justify-content-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div>
 					<hr></hr>
 				</div>
-				<div className="info mt-4 d-flex justify-content-around">
+				<div className="info mx-auto">
 					<div>
-						<p>Crew:</p>
-						<p>{store.vehicleInfoList[params.index].crew}</p>
+						<p><strong>Crew:</strong></p>
+						<p className="">{store.vehicleInfoList[params.index].crew}</p>
 					</div>
 					<div>
-						<p>Passengers:</p>
+					<p><strong>Passengers:</strong></p>
 						<p>{store.vehicleInfoList[params.index].passengers}</p>
 					</div>
 					<div>
-						<p>Length:</p>
+					<p><strong>Length:</strong></p>
 						<p>{store.vehicleInfoList[params.index].length}</p>
 					</div>
 					<div>
-						<p>Model:</p>
+					<p><strong>Model:</strong></p>
 						<p>{store.vehicleInfoList[params.index].model}</p>
 					</div>
 					<div>
-						<p>Cargo Capacity:</p>
+						<p><strong>Cargo Capacity:</strong></p>
 						<p>{store.vehicleInfoList[params.index].cargo_capacity}</p>
 					</div>			
 					<hr></hr>
 				</div>
 
-				<div className="d-flex justify-content-center mt-4">
+				<div className="d-flex justify-content-center mt-5 pt-4">
 					<Link to="/">
 						<button className="btn btn-primary" href="#" role="button">
 							Back home

@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Context } from '../store/appContext';
 import { Link } from "react-router-dom";
 
 export const Home = () => {
 
 	const {store, actions } = useContext(Context);
+	
 
 	useEffect( () => {
 
@@ -48,7 +49,7 @@ export const Home = () => {
 
 	return (
 	
-	<div className="bg-dark p-5 rounded-lg mx-auto">
+	<div className="p-5 rounded-lg mx-auto">
 		<h1 className="characters display-4 p-3">Characters</h1>
 			<div className="d-inline-flex flex-wrap my-auto">
 			{
@@ -56,7 +57,7 @@ export const Home = () => {
 				(item, index) => {
 					return (
 						<div className="main card px-2 py-2 mb-1" key={index}>
-						<img className="card-img-top"  src={`https://starwars-visualguide.com/assets/img/characters/${item.uid}.jpg`}/>
+						<img className="card-img-top"  src={`https://starwars-visualguide.com/assets/img/characters/${item.uid}.jpg`} alt={item.name}/>
 							<div className="card-body">
 								<h5 className="card-title">{item.name}</h5>
 									<div className="ButtonCard d-flex justify-content-between">
@@ -82,7 +83,7 @@ export const Home = () => {
 					(item, index) => {
 						return (
 							<div className="main card px-2 py-2 mb-1" key={index}>
-							<img className="card-img-top" src={`https://starwars-visualguide.com/assets/img/planets/${item.uid}.jpg`} alt="Card image cap"/>
+							<img className="card-img-top" src={item.name === "Tatooine" ? "https://swtorstrategies.com/wp-content/uploads/2010/01/tatooine.jpg" : `https://starwars-visualguide.com/assets/img/planets/${item.uid}.jpg`} alt={item.name}/>
 								<div className="card-body">
 									<h5 className="card-title">{item.name}</h5>
 										<div className="ButtonCard d-flex justify-content-between">
@@ -108,7 +109,7 @@ export const Home = () => {
 					(item, index) => {
 						return (
 							<div className="main card px-2 py-2 mb-1" key={index}>
-							<img className="card-img-top" src={`https://starwars-visualguide.com/assets/img/vehicles/${item.uid}.jpg`} alt="Card image cap"/>
+							<img className="card-img-top" src={`https://starwars-visualguide.com/assets/img/vehicles/${item.uid}.jpg`} alt={item.name}/>
 								<div className="card-body">
 									<h5 className="card-title">{item.name}</h5>
 										<div className="ButtonCard d-flex justify-content-between">

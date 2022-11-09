@@ -11,7 +11,7 @@ export const Character = props => {
 	return (
 
 	
-		<div className="row bg-dark p-5 rounded-lg d-flex">
+		<div className="row p-5 rounded-lg d-flex">
 				<div className="col d-flex justify-content-center mb-3">
 					<img src={`https://starwars-visualguide.com/assets/img/characters/${store.peopleList[params.index].uid}.jpg`} />
 				</div>
@@ -24,23 +24,23 @@ export const Character = props => {
 				</div>
 				<div className="info">
 					<div>
-						<p>Birth year:</p>
+						<p><strong>Birth Year:</strong></p>
 						<p>{store.peopleInfoList[params.index].birth_year}</p>
 					</div>
 					<div>
-						<p>Hair Colour:</p>
+						<p><strong>Hair Colour:</strong></p>
 						<p>{store.peopleInfoList[params.index].hair_color}</p>
 					</div>
 					<div>
-						<p>Height:</p>
+						<p><strong>Height:</strong></p>
 						<p>{store.peopleInfoList[params.index].height}</p>
 					</div>
 					<div>
-						<p>Eye Colour:</p>
+						<p><strong>Eye Colour:</strong></p>
 						<p>{store.peopleInfoList[params.index].eye_color}</p>
 					</div>
 					<div>
-						<p>Gender:</p>
+						<p><strong>Gender:</strong></p>
 						<p>{store.peopleInfoList[params.index].gender}</p>
 					</div>
 								

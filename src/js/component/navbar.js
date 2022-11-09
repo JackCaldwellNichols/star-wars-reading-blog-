@@ -24,7 +24,7 @@ export const Navbar = () => {
 	
 					return (
 						
-						<Dropdown.Item key={item.index} value="empty">{item}<button className="trash"><FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></button></Dropdown.Item>
+						<Dropdown.Item key={item.index} value="empty">{item}<button className="trash"><FontAwesomeIcon icon={faTrashCan} onClick={() => actions.removeItem(item)}></FontAwesomeIcon></button></Dropdown.Item>
 					)
 				})}		
     		</DropdownButton>
