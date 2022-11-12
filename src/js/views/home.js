@@ -6,47 +6,6 @@ export const Home = () => {
 
 	const {store, actions } = useContext(Context);
 	
-
-	useEffect( () => {
-
-		actions.fetchPeople();
-
-	}, [])
-
-	useEffect( () => {
-
-		actions.fetchPlanets();
-
-	}, [])
-
-	useEffect( () => {
-
-		actions.fetchVehicles();
-
-	}, [])
-
-	useEffect( () => {
-
-		actions.fetchPeopleInfo();
-
-	}, [])
-
-	useEffect( () => {
-
-		actions.fetchPlanetInfo();
-
-	}, [])
-
-	useEffect( () => {
-
-		actions.fetchVehicleInfo();
-
-	}, [])
-
-
-
-	
-
 	return (
 	
 	<div className="p-5 rounded-lg mx-auto">
