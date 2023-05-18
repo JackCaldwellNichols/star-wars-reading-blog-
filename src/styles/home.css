@@ -1,0 +1,49 @@
+
+
+.title {
+    color: gold;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.card{
+  width: 300px;
+  height: 500px; 
+}
+
+.card-img-top{
+    min-height: 80%;
+    object-fit: cover;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ButtonCard{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+
+}
+
+.button{
+    max-height: 40px;
+}

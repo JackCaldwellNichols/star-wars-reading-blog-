@@ -1,54 +1,35 @@
-.sw-image {
-    height: 90px;
+body {
+    background: url('https://cdn.pixabay.com/photo/2016/09/08/12/00/stars-1654074_960_720.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: none;
+    height: 100%;
+
 }
 
 .navbar {
+    height: 60px;
     background-color: black;
-}
-
-.characters {
-    color: rgb(217, 232, 20);
-}
-
-.planets {
-    color:rgb(217, 232, 20);
-}
-
-.info {
-    color: rgb(217, 232, 20);
+    width: 100%;
+    align-items: center;
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px, 0px;
+    justify-content: space-between;
 }
 
-.main {
-    width: 18rem;
-    margin-left: 5px;
-    background-color: black;
-    color: yellow;
-}
-
-.desc {
-    color: yellow;
-}
-
-h1 {
-    color: yellow;
-}
-
-hr {
-    color: yellow;
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .trash {
-    background-color: white;
-    color: red;
+    background: white;
     border: none;
-    margin-left: 10px;
-    justify-content: end;
+    color: red;
 }
 
-body {
-    background-image: url(https://cdn.mos.cms.futurecdn.net/BfemybeKVXCf9pgX9WCxsc-1200-80.jpg) ;
-    
+.sw-image{
+    height: 50px;
 }
