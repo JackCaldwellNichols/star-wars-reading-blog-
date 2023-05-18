@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import '../../styles/character.css'
 
-
 export const Character = props => {
 	const {store, actions} = useContext(Context)
 	let params = useParams()
@@ -11,8 +10,6 @@ export const Character = props => {
 	
 	
 	return (
-
-	
 		<div className="wrapperChar">
 			<div className="top">
 				<div className="leftChar">

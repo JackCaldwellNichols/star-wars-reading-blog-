@@ -9,9 +9,11 @@ export const Home = () => {
 	
 	return (
 	
+
 	<div className="container">
 		<h1 className="title">Characters</h1>
 			<div className="wrapper">
+
 			{
 			store.peopleList.map(
 				(item, index) => {
@@ -33,8 +35,7 @@ export const Home = () => {
 					)
 				})}
 			</div>
-		
-
+	
 			<div>
 			<h1 className="title">Planets</h1>
 				<div className="wrapper">
@@ -42,7 +43,7 @@ export const Home = () => {
 				store.planetList.map(
 					(item, index) => {
 						return (
-							<div className="card" key={index}>
+			<div className="card" key={index}>
 							<img className="card-img-top" src={item.name === "Tatooine" ? "https://swtorstrategies.com/wp-content/uploads/2010/01/tatooine.jpg" : `https://starwars-visualguide.com/assets/img/planets/${item.uid}.jpg`} alt={item.name}/>
 								<div className="card-body">
 									<h5 className="card-title">{item.name}</h5>
@@ -62,12 +63,14 @@ export const Home = () => {
 				</div>
 
 				<div>
+
 			<h1 className="title">Vehicles</h1>
 				<div className="wrapper">
 				{
 				store.vehicleList.map(
 					(item, index) => {
 						return (
+
 							<div className="card" key={index}>
 							<img className="card-img-top" src={`https://starwars-visualguide.com/assets/img/vehicles/${item.uid}.jpg`} alt={item.name}/>
 								<div className="card-body">

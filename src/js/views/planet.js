@@ -11,8 +11,6 @@ export const Planet = props => {
 	let params = useParams()
 
 	return (
-
-	
 		<div className="wrapperPlanet">
 			<div className="top">
 				<div className="leftPlanet">
